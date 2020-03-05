@@ -1,0 +1,4 @@
+.netlify/
+post/*
+# Local Netlify folder
+.netlify

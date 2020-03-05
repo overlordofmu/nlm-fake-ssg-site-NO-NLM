@@ -1,0 +1,19 @@
+[build]
+# here we will use build commands to simulate a static site build
+# simple copy/move - reference https://community.netlify.com/t/using-next-js-as-a-static-site-generator-for-netlify/3391
+  command = "./copy-build.sh"
+  publish = "post"
+##  command = "transform-build.sh"
+
+
+[build.environment]
+
+
+[context.deploy-preview]
+
+#  command = "  || { sleep 120 ; false ; } "
+
+[[redirects]]
+  from = "/foo"
+  to = "/bar"
+  status = 301
