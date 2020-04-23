@@ -6,14 +6,18 @@
 ##  command = "transform-build.sh"
 
 
-[build.environment]
+[dev]
+#  command = "./copy-build.sh" # Command to start your dev server
+  port = 8888 # Port that the dev server will be accessible on
+  publish = "post" # If you use a _redirect file, provide the path to your static content folder
 
-
-[context.deploy-preview]
-
-#  command = "  || { sleep 120 ; false ; } "
 
 [[redirects]]
   from = "/foo"
   to = "/bar"
   status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
