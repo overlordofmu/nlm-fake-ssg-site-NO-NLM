@@ -7,7 +7,7 @@ This a template repo for testing Large Media's behavior under various conditions
 It simulates actions SSGs do with media during Netlify builds - without an SSG. Bash scripts are used to simulate and simplify the behavior of SSGs.
 
 
-*delete the section this line and everything below after copying repo*
+*delete this line and everything below after copying repo*
 
 This repo is intended to be used as a template and does not have Large Media enabled yet.
 
